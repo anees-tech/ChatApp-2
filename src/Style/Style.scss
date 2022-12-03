@@ -1,0 +1,122 @@
+$backgroug_color: #66757F;
+$font_color: #292F33;
+$btn_color: #FFFFFF;
+$primary_color: #E1E8ED;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+$basicFontFamily: 'Manrope', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+$logoFontFamily: 'Courgette', cursive;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary_color;
+    font-family: $basicFontFamily;
+}
+
+.Logo {
+    user-select: none;
+    font-family: $logoFontFamily;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: $primary_color;
+    background-color: #67727ac5;
+    border-radius: 2rem;
+}
+
+// Login Page
+.container {
+    height: 60vh;
+    background-color: $primary_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        color: $font_color;
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 0.2rem 0;
+    }
+
+    .box {
+        background-color: $backgroug_color;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        width: 30%;
+        margin-top: 6rem;
+        // height: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 1rem;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: $font_color;
+        }
+
+        .userName,.password{
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            
+            label{
+                font-weight: 700;
+                color: $font_color;
+            }
+            input {
+                padding: 1rem;
+                background-color: $backgroug_color;
+                outline: none;
+                border: none;
+                color: $btn_color;
+                font-size: 1rem;
+                margin: 0.4rem;
+                border-bottom: 1px solid $font_color;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #c0c5c99d;
+                }
+                &:focus{
+                    background-color: $btn_color;
+                    color: $font_color;
+                }
+            }
+        }
+
+        button{
+            cursor: pointer;
+            font-size: 1.6rem;
+            text-align: center;
+            background-color: $backgroug_color;
+            color: $font_color;
+            padding: 0.5rem;
+            margin: 1rem 0;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #c0c5c99d;
+            }
+            &:active{
+                background-color: $btn_color;
+                
+            }
+        }
+
+    }
+}
