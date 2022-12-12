@@ -14,11 +14,14 @@ $logoFontFamily: 'Courgette', cursive;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
     background-color: $primary_color;
     font-family: $basicFontFamily;
+    // overflow: hidden;
 }
 
 .Logo {
@@ -56,7 +59,7 @@ body {
         flex-direction: column;
         border-radius: 2rem;
         width: 30%;
-        margin-top: 6rem;
+        margin-top: 10rem;
         // height: 100%;
 
         form {
@@ -89,6 +92,7 @@ body {
                 margin: 0.4rem;
                 border-bottom: 1px solid $font_color;
                 transition: 0.3s;
+                
                 &:hover {
                     background-color: #c0c5c99d;
                 }
@@ -96,6 +100,27 @@ body {
                     background-color: $btn_color;
                     color: $font_color;
                 }
+            }
+        }
+
+
+        .avatar{
+            padding: 5px 1rem;
+            // background-color: #292F33;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            
+            &:hover {
+                background-color: #c0c5c99d;
+            }
+            &:active{
+                background-color: $btn_color;
+                color: $font_color;
+            }
+            .AvatarPIC{
+                width: 10%;
+                height: 10%;
             }
         }
 
